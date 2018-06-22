@@ -1,0 +1,36 @@
+body {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 30px;
+	font-family: 'Source Sans Pro';
+	border: 20px solid #bdc3c7;
+}
+
+h3 {
+	color: #3498db;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 0.15rem;
+	margin: 25px 30px -20px 30px;
+}
+
+h1 {
+	color: #2c3e50;
+	margin: 30px;
+}
+
+p {
+	margin: 30px;
+}
+
+h1 + p {
+	border-left: 4px solid #bdc3c7;
+	padding-left: 10px
+}
+
+hr {
+	border: 0;
+	margin: -10px 30px -5px 30px;
+	height: 3px;
+	background: #f1f1f1;
+}
