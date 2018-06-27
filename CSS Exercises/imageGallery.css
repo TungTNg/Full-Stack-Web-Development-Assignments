@@ -1,0 +1,29 @@
+body {
+	padding-top: 4.375rem;
+}
+
+body{
+ background-image: url(http://bit.ly/2gPLxZ4);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.jumbotron {
+   opacity: 0.85;
+}
+
+.img-thumbnail {
+	margin: 1rem;
+}
+
+.jumbotron {
+	color: #2c3e50;
+}
+
+.navbar {
+	background: #2c3e50;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 0.85);
+}
