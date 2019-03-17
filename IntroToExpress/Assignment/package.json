@@ -1,0 +1,14 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "Tung's simple routing app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tung Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
