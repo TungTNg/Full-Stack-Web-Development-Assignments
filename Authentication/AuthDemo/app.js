@@ -23,6 +23,7 @@ app.use(passport.session());
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.set("useFindAndModify", false);
 
+passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
@@ -56,6 +57,20 @@ app.post("/register", function(req, res) {
             res.redirect("/app/secret"); 
         });
     });
+});
+
+// LOGIN ROUTES
+// render login form
+app.get("/login", function(req, res) {
+    res.render("login");
+});
+
+// login logic
+// middleware
+app.post("/login", passport.authenticate("local", {
+    successRedirect: "/app/secret",
+    failureRedirect: "/app/login"
+}), function(req, res) {
 });
 
 // RUN CONFIG
